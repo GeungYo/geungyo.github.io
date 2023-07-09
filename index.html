@@ -3,41 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>나의 포트폴리오</title>
+  <title>Geungyo Oh</title>
   <style>
-    /* 스타일을 추가할 수 있습니다. */
+    /* Overall styling */
+    body {
+      font-family: Arial, Helvetica, sans-serif, monospace;
+      background-color: #E0F5FF;
+      color: #039BE5;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Header styling */
+    header {
+      background-color: #039BE5;
+      padding: 20px;
+      text-align: left;
+    }
+    
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #E0F5FF;
+      margin-right: 20px;
+      float: left;
+    }
+    
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    h1 {
+      color: #E0F5FF;
+      font-size: 36px;
+      margin: 0;
+      display: inline-block;
+    }
+    
+    /* Main content styling */
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #E0F5FF;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .content-container {
+      text-align: left; /* Add this line to align content on the left */
+    }
+    
+    section {
+      margin-bottom: 40px;
+      text-align: left;
+    }
+    
+    h2 {
+      font-size: 24px;
+      margin: 0 0 20px;
+      color: #039BE5;
+    }
+    
+    /* Project styling */
+    .project {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .project img {
+      width: 120px;
+      height: auto;
+      margin-right: 20px;
+    }
+    
+    .project h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #039BE5;
+    }
+    
+    .project p {
+      margin: 5px 0 0;
+    }
+    
+    /* Skill styling */
+    .skill {
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: #039BE5;
+      color: #E0F5FF;
+      border-radius: 4px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    
+    /* Contact styling */
+    .contact-info {
+      display: flex;
+      align-items: center;
+    }
+    
+    .contact-info i {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+    
+    /* Footer styling */
+    footer {
+      background-color: #039BE5;
+      color: #E0F5FF;
+      padding: 20px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>나의 포트폴리오</h1>
-    <!-- 필요한 헤더 정보를 추가하세요. -->
+    <div class="profile-image">
+      <img src="C:\Users\user\Documents\카카오톡 받은 파일\KakaoTalk_20230523_150721238.jpg" alt="Profile Image">
+    </div>
+    <h1>Geungyo Oh</h1>
   </header>
 
   <main>
-    <section>
-      <h2>소개</h2>
-      <!-- 자기 소개를 작성하세요. -->
-    </section>
+    <div class="content-container"> <!-- Add a wrapper container -->
+      <section>
+        <h2>About</h2>
+        <p>Hello! My name is Geungyo Oh. I am a developer with a passion for software development. I have diverse experience and skills in various programming languages and technologies.</p>
+      </section>
 
-    <section>
-      <h2>프로젝트</h2>
-      <!-- 프로젝트 목록을 작성하세요. -->
-    </section>
+      <section>
+        <h2>Projects</h2>
+        <div class="project">
+          <img src="project1.jpg" alt="Project 1">
+          <div>
+            <h3>Project 1</h3>
+            <p>Brief description of the project.</p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="project2.jpg" alt="Project 2">
+          <div>
+            <h3>Project 2</h3>
+            <p>Brief description of the project.</p>
+          </div>
+        </div>
+      </section>
 
-    <section>
-      <h2>스킬</h2>
-      <!-- 보유한 스킬을 작성하세요. -->
-    </section>
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li>새서귀초등학교</li>
+          <li>한수중학교</li>
+          <li>일산대진고등학교</li>
+          <li>성신여자대학교</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>연락</h2>
-      <!-- 연락처 정보를 작성하세요. -->
-    </section>
+      <section>
+        <h2>Contact</h2>
+        <div class="contact-info">
+          <i class="fas fa-envelope"></i>
+          <p>Email Address</p>
+        </div>
+        <div class="contact-info">
+          <i class="fas fa-phone"></i>
+          <p>Phone Number</p>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer>
-    <!-- 추가적인 정보를 작성하세요. -->
+    <p>© 2023 Geungyo Oh's Portfolio. All rights reserved.</p>
   </footer>
 </body>
 </html>
